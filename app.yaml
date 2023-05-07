@@ -1,8 +1,6 @@
 runtime: python38
 
 handlers:
-- url: /img
-  static_dir: img
 - url: /.*
   static_files: index.html
   upload: index.html
