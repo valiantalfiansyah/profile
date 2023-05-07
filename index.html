@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Bangkit 2023</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+            
+            /*Body*/
+            main {
+                padding: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+                overflow: auto;
+                
+                display: flex;
+                gap: 1.5rem;
+                flex-direction: column;
+            }
+            body {
+            font-family: 'Quicksand';
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            }
+ 
+            h2 {
+            color: #ed1e24;
+            font-size: 30px;
+            }
+            
+            h3 {
+            color: #ed1e24;
+            font-size: 20px;
+            }
+            
+            .card {
+               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+               border-radius: 10px;
+               padding: 50px;
+                margin-top: 30px;
+            }
+            
+            #content {
+              flex:5;
+            }
+            
+            
+            * {
+                box-sizing: border-box;
+            }
+            /*Navigation Bar*/
+            nav a {
+                font-size: 18px;
+                font-weight: 400;
+                text-decoration: none;
+                color: white;
+            }
+            
+            nav a:hover {
+                font-weight: bold;
+                color: whit
+            }
+            
+            .jumbotron {
+              padding: 60px;
+              background-color: #ed1e24;
+              text-align: center;
+              font-size: 20px;
+              color: white;
+            }
+            
+            nav ul {
+                padding-inline: 4rem;
+                display: flex;
+                gap: 2rem;
+                
+            }
+            nav li {
+                list-style-type: none;
+            }
+            
+            nav {
+                background-color: #ae191e;
+                padding: 5px;
+                position: sticky;
+                top: 0;
+            }
+            
+            /*Navbar nempel*/
+            header {
+                display: inline;
+            }
+            
+            /* Footer*/
+            footer {
+               padding: 20px;
+               color: white;
+               background-color: #ae191e;
+               text-align: center;
+               font-weight: bold;
+            }
+            
+            /*Content*/
+            section h3{
+                margin-top: 30px;
+                text-align: justify;
+            }
+            
+            
+            
+            /*Display Flex untuk Overview Page*/
+            #overview{
+                display: flex;
+                align-items: center;
+            }
+            .overview-text{
+                flex:1 1;
+            }
+            
+            .overview-text p {
+                font-size: 20px;
+            }
+            .overview-logo{
+                flex:1;
+                display: flex;
+            }
+            .overview-logo img {
+                margin: auto;
+                border: 5px solid #ae191e;
+                padding: 0.9%;
+                border-radius: 360px;
+                width: 360px;
+                height: 360px;
+            }
+            
+            
+            .participant-card{
+                display: flex;
+                justify-content: space-between;
+                padding-left:20%;
+                padding-right:20%;
+                
+            }
+        
+            .participant-card img {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 360px;
+                display: flex;
+                
+                width: 100px;
+                
+            }
+            
+            /*Learning Path Description*/
+            #path p{
+                text-align: justify;
+            }
+            
+            /*Dynamic Change*/
+            @media screen and (max-width: 700px) {
+                nav ul { 
+                justify-content: center;
+              
+                }
+                
+                #overview {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    text-align: justify;
+                }
+                #overview h2 {
+                    text-align: center;
+                }
+                
+                .participant-card {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                
+                .participant-card a {
+                    margin-bottom: 30px;
+                }
+            }
+            @media screen and (max-width: 450px) {
+                .overview-logo img {
+                    width: 200px;
+                    height: 200px;
+                    border: 3px solid #ae191e;
+                }
+            }
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+            <h1>Welcome to My Profile!</h1>
+            <p></p>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#overview">Profile</a></li>
+                    <li><a href="#participant">Social Media</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div id="content">
+                    <article id="overview" class="card">
+                        <div class="overview-text">
+                        <h2>Who am I?</h2>
+                            <p>Hello! My Name is Valiant Alfiansyah. I'm from Bekasi, but currently, I'm in Yogyakarta studying at Gadjah Mada University, learning Geographic Information Systems in 3rd Year. Now, I'm Learning at Bangkit Academy, taking Cloud Computing Path. I hope to pursue my career in the Tech industry by learning from Bangkit Academy.</p>
+                        </div>
+                        <div class="overview-logo">
+                            <img src="https://storage.googleapis.com/favorable-valor-385920.appspot.com/Profile.jpg">
+                        </div>
+                   
+                    </article>
+                
+            
+                    <article id="participant" class="card">
+                            <h2 style="text-align: center;">Connect with Me!</h2>
+                            <p style="text-align: center;">I have several Social Media that you can Connect to</p>
+                         
+                        <div class="participant-card">
+                        
+                                <a href="https://github.com/valiantalfiansyah">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/valiantalfiansyah/">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png">
+                                </a>
+
+                                <a href="https://www.instagram.com/valiantalfiansyah/">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png">
+                                </a>
+                            
+                        </div>
+                        
+                    </article>
+                
+                
+        </main>
+
+        <footer>
+            &copy; 2023, Valiant Alfiansyah
+        </footer>
+    </body>
+</html>
